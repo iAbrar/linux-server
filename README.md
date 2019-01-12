@@ -8,19 +8,27 @@
 
 ## Installation and Setup Instructions
 1. Log in to the server by
+
 `ssh -i ~/.ssh/key.pem ubuntu@18.194.188.135`
 
 2. Update all currently installed packages.
 `sudo apt-get update`
+
 `sudo apt-get upgrade`
 
 3. Change the SSH port from 22 to 2200.
-`sudo ufw default deny incoming
- sudo ufw default allow outgoing
- sudo ufw allow 2200/tcp
- sudo ufw allow www
- sudo ufw allow ntp
- sudo ufw enable`
+
+`sudo ufw default deny incoming`
+
+`sudo ufw default allow outgoing`
+ 
+ `sudo ufw allow 2200/tcp`
+ 
+ `sudo ufw allow www`
+ 
+ `sudo ufw allow ntp`
+ 
+ `sudo ufw enable`
 
 1. move clone directory to `/var/www/catalog/catalog/`
 
