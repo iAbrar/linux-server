@@ -40,7 +40,8 @@
 
 `sudo nano /etc/sudoers.d/grader`
 
-   - Add following line to this file:
+  - Add following line to this file:
+
    `grader ALL=(ALL:ALL) ALL`
 
 
