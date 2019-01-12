@@ -40,9 +40,9 @@
 
 `sudo nano /etc/sudoers.d/grader`
 
-  - Add following line to this file:
+   - Add following line to this file:
 
-   `grader ALL=(ALL:ALL) ALL`
+    `grader ALL=(ALL:ALL) ALL`
 
 
 1. move clone directory to `/var/www/catalog/catalog/`
