@@ -44,6 +44,8 @@
 
         `grader ALL=(ALL:ALL) ALL`
 
+3. Create an SSH key pair for grader using the ssh-keygen tool.
+
 
 1. move clone directory to `/var/www/catalog/catalog/`
 
