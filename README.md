@@ -42,23 +42,14 @@
 
    - Add following line to this file:
 
-    `grader ALL=(ALL:ALL) ALL`
+        `grader ALL=(ALL:ALL) ALL`
 
 
 1. move clone directory to `/var/www/catalog/catalog/`
 
-## API Reference
-
-
-## Technology:
--
--
 
 ## Resources I used them:
-1.
+1. [How To Deploy a Flask Application on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
 2.
 
-## Future Checklist:
-- [ ] uncompleted
-- [x] completed :muscle:
 
