@@ -2,10 +2,6 @@
 
 >You will take a baseline installation of a Linux server and prepare it to host your web applications. You will secure your server from a number of attack vectors, install and configure a database server, and deploy one of your existing web applications onto it.
 
-
-## Project Screen Shot(s)
-![]()
-
 ## Installation and Setup Instructions
 ### Secure your server:
 1. Log in to the server by
@@ -64,9 +60,13 @@
 ### Prepare to deploy your project:
 1.  Configure the local timezone to UTC:
 
- `sudo dpkg-reconfigure tzdata`
+  `sudo dpkg-reconfigure tzdata`
  
- - Hit none above, then UTC.
+   - Hit none above, then UTC.
+   
+2.  Install and configure Apache to serve a Python mod_wsgi application:
+
+
 1. move clone directory to `/var/www/catalog/catalog/`
 
 
