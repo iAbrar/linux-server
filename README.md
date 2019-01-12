@@ -94,6 +94,8 @@
    
 4. Install git
    - Install Git using `sudo apt-get install git`
+   
+5. Clone and setup your Item Catalog project from the Github repository you created earlier in this Nanodegree program.
    - Move to the /var/www directory by `cd /var/www`
    - Create the application directory `sudo mkdir catalog`
    - Move inside the directory using `cd catalog`
@@ -109,6 +111,6 @@
 
 ## Resources I used them:
 1. [How To Deploy a Flask Application on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
-2.
+2. [anumsh/Linux-Server-Configuration](https://github.com/anumsh/Linux-Server-Configuration)
 
 
