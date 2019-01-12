@@ -91,8 +91,20 @@
    - Quit postgreSQL  `\q`
    
    - Exit from user "postgres" `exit`
+   
+4. Install git
+   - Install Git using `sudo apt-get install git`
+   - Move to the /var/www directory by `cd /var/www`
+   - Create the application directory `sudo mkdir catalog`
+   - Move inside the directory using `cd catalog`
+   - Clone the Catalog App to the virtual machine `git clone https://github.com/iAbrar/catalog.git`
+   - Move to the inner catalog directory using `cd catalog`
+   - Rename application.py to __init__.py using `sudo mv application.py __init__.py`
+   - Edit database_setup.py, application.py and seeder.py and change engine = create_engine('sqlite:///recipe.db') to engine = create_engine('postgresql://catalog:password@localhost/catalog')
+   - Install pip `sudo apt-get install python-pip`
+   - Install psycopg2 `sudo apt-get -qqy install postgresql python-psycopg2`
+   - Create database schema `sudo python database_setup.py`
 
-1. move clone directory to `/var/www/catalog/catalog/`
 
 
 ## Resources I used them:
