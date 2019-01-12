@@ -45,8 +45,28 @@
         `grader ALL=(ALL:ALL) ALL`
 
 3. Create an SSH key pair for grader using the ssh-keygen tool.
+   - Generate a SSH key pair on the local machine:
+   
+    `ssh-keygen`
+   
+   - Place the public key on the server that we want to use:
+   
+    `ssh-copy-id grader@18.194.188.135 -i key_name.pub`
 
+   - Log into remote server as root user and edit the following file and copy public key content inside:
+   
+    `nano /home/grader/.ssh/authorized_keys`
+    
+   - Now we can log into the remote server through ssh with the following command:
+   
+     `ssh grader@18.194.188.135 -p 2200 -i ~/.ssh/LinuxProject`
+     
+### Prepare to deploy your project:
+1.  Configure the local timezone to UTC:
 
+ `sudo dpkg-reconfigure tzdata`
+ 
+ - Hit none above, then UTC.
 1. move clone directory to `/var/www/catalog/catalog/`
 
 
