@@ -65,7 +65,32 @@
    - Hit none above, then UTC.
    
 2.  Install and configure Apache to serve a Python mod_wsgi application:
+   - Install Apache `sudo apt-get install apache2`
+   - Install mod_wsgi `sudo apt-get install python-setuptools libapache2-mod-wsgi`
+   - Restart Apache `sudo service apache2 restart`
 
+3. Install and configure PostgreSQL:
+   - Install PostgreSQL `sudo apt-get install postgresql`
+   - Check if no remote connections are allowed `sudo cat /etc/postgresql/9.3/main/pg_hba.conf`
+   - Login as user "postgres" `sudo su - postgres`
+   - Get into postgreSQL shell `psql`
+   - Create a new database named catalog and create a new user named catalog in postgreSQL shell
+     
+     `CREATE DATABASE catalog;`
+     
+     `CREATE USER catalog;`
+     
+   - Set a password for user catalog
+   
+    `ALTER ROLE catalog WITH PASSWORD 'your_password';`
+   
+   - Give user "catalog" permission to "catalog" application database
+   
+     `GRANT ALL PRIVILEGES ON DATABASE catalog TO catalog;`
+   
+   - Quit postgreSQL  `\q`
+   
+   - Exit from user "postgres" `exit`
 
 1. move clone directory to `/var/www/catalog/catalog/`
 
