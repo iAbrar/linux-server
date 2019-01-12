@@ -7,6 +7,7 @@
 ![]()
 
 ## Installation and Setup Instructions
+### Secure your server:
 1. Log in to the server by
 
 `ssh -i ~/.ssh/key.pem ubuntu@18.194.188.135`
@@ -21,14 +22,27 @@
 `sudo ufw default deny incoming`
 
 `sudo ufw default allow outgoing`
- 
+
  `sudo ufw allow 2200/tcp`
- 
+
  `sudo ufw allow www`
- 
+
  `sudo ufw allow ntp`
- 
+
  `sudo ufw enable`
+
+### Give grader access:
+1. Create a new user account named grader
+
+`sudo adduser grader`
+
+2. Give grader the permission to sudo.
+
+`sudo nano /etc/sudoers.d/grader`
+
+   - Add following line to this file:
+   `grader ALL=(ALL:ALL) ALL`
+
 
 1. move clone directory to `/var/www/catalog/catalog/`
 
