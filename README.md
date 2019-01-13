@@ -127,7 +127,11 @@
    - Install psycopg2 `sudo apt-get -qqy install postgresql python-psycopg2`
    - Create database schema `sudo python database_setup.py`
 
+6.  Disable the default Apache site
 
+    `sudo a2dissite 000-default.conf`
+
+    - Reload Apache: `sudo service apache2 reload`
 
 ## Resources I used them:
 1. [How To Deploy a Flask Application on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
