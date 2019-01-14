@@ -139,5 +139,5 @@ you can find it [here](http://18.197.171.157.xip.io/)
 ## Resources I used them:
 1. [How To Deploy a Flask Application on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
 2. [anumsh/Linux-Server-Configuration](https://github.com/anumsh/Linux-Server-Configuration)
-
+3. [bencam/linux-server-configuration](https://github.com/bencam/linux-server-configuration)
 
