@@ -2,11 +2,14 @@
 
 >You will take a baseline installation of a Linux server and prepare it to host your web applications. You will secure your server from a number of attack vectors, install and configure a database server, and deploy one of your existing web applications onto it.
 
+you can find it [here](http://18.197.171.157.xip.io/)
+
+
 ## Installation and Setup Instructions
 ### Secure your server:
 1. Log in to the server by
 
-    `ssh -i ~/.ssh/key.pem ubuntu@18.194.188.135`
+    `ssh -i ~/.ssh/key.pem ubuntu@18.197.171.157`
 
 2. Update all currently installed packages.
     `sudo apt-get update`
@@ -67,7 +70,7 @@
 
    - Place the public key on the server that we want to use:
 
-    `ssh-copy-id grader@18.194.188.135 -i key_name.pub`
+    `ssh-copy-id grader@18.197.171.157 -i key_name.pub`
 
    - Log into remote server as root user and edit the following file and copy public key content inside:
 
@@ -75,7 +78,7 @@
 
    - Now we can log into the remote server through ssh with the following command:
 
-     `ssh grader@18.194.188.135 -p 2200 -i ~/.ssh/LinuxProject`
+     `ssh grader@18.197.171.157 -p 2200 -i ~/.ssh/LinuxProject`
 
 ### Prepare to deploy your project:
 1.  Configure the local timezone to UTC:
